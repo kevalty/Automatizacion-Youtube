@@ -1,0 +1,11 @@
+.env
+credentials/
+output/
+logs/
+__pycache__/
+*.pickle
+*.pyc
+data/historial.json
+*.egg-info/
+.venv/
+venv/

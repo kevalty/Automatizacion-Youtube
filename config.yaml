@@ -1,0 +1,71 @@
+canal:
+  nombre: "Velo Oculto"
+  timezone: "America/Guayaquil"
+
+horarios:
+  - "08:00"
+  - "12:00"
+  - "17:00"
+
+video:
+  duracion_max: 58                  # Segundos (margen bajo 60 para Shorts)
+  resolucion: [1080, 1920]          # 9:16 vertical obligatorio
+  fps: 30
+  codec_video: "libx264"
+  codec_audio: "aac"
+
+tts:
+  voz: "es-MX-JorgeNeural"
+  velocidad: "-5%"
+
+subtitulos:
+  fuente: "assets/fonts/Montserrat-Bold.ttf"
+  tamaño: 55
+  color: "#FFFFFF"
+  color_resaltado: "#FFD700"        # Dorado para palabra actual
+  color_borde: "#000000"
+  grosor_borde: 4
+  palabras_por_bloque: 3
+  posicion_y: 0.45                  # Centro-ligeramente arriba (0.0=top, 1.0=bottom)
+
+musica:
+  volumen: 0.06
+  fade_in: 1.5
+  fade_out: 2.5
+  carpeta: "assets/music/"
+
+sfx:
+  activo: true
+  volumen: 0.15
+  # El sistema inserta automáticamente:
+  # - 1 efecto al inicio (primeros 3 seg) para enganchar
+  # - 1-2 efectos durante el video en momentos de pausa ("...")
+  # - 1 efecto al cierre
+  carpeta: "assets/sfx/"
+
+imagenes:
+  duracion_por_imagen: 4
+  efecto_zoom: true                 # Ken Burns
+  zoom_factor: 1.12                 # Zoom de 1.0 a 1.12
+  filtro_oscuro: 0.35
+  fallback_keywords:                # Si las del guión no dan resultados
+    - "dark mystery"
+    - "night sky stars"
+    - "abandoned building"
+    - "shadow silhouette"
+    - "ancient ruins dark"
+
+youtube:
+  categoria_id: "22"
+  privacidad: "public"
+  sufijo_titulo: " #Shorts"
+  tags_base:
+    - "velo oculto"
+    - "teorias conspirativas"
+    - "misterios"
+    - "shorts"
+    - "misterios sin resolver"
+
+guiones:
+  archivo: "data/guionesVeloOculto.json"
+  historial: "data/historial.json"
